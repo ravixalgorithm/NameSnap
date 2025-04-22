@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Screenshot & Rename</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Name Screenshot</h1>
+  <button id="startVoice">🎤 Speak to Name</button>
+  <input type="text" id="filename" placeholder="Filename">
+
+  <h3>Select Screenshot Mode</h3>
+  <select id="captureMode">
+      <option value="visible">Visible Tab</option>
+      <option value="screen">Entire Screen</option>
+      <option value="window">Current Window</option>
+  </select>
+
+  <button id="takeShot">📸 Take Screenshot</button>
+
+  <div id="permissionModal" style="display:none;">
+    <h3>Microphone Permission Needed</h3>
+    <p>Please allow microphone access in your browser settings to use voice recognition.</p>
+    <button id="grantPermission">Open Settings</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

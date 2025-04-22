@@ -1,0 +1,1 @@
+// Background service worker (currently minimal, used for future features)

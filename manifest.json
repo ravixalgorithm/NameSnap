@@ -1,0 +1,32 @@
+{
+  "name": "Voice Screenshot Renamer",
+  "description": "Take screenshots and name them using your voice with advanced options.",
+  "version": "1.1",
+  "author": "Prince Verma",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "downloads",
+    "scripting",
+    "desktopCapture"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
